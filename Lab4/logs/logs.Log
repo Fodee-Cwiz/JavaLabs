@@ -1,0 +1,6 @@
+[INFO ][2023-03-25 00:14:31][main] Starting the program...
+[INFO ][2023-03-25 00:14:31][main] Starting to read registration data.
+[DEBUG][2023-03-25 00:17:22][main] Writing data to file registrationData.txt...
+[DEBUG][2023-03-25 00:17:22][main] Data has been written to file registrationData.txt.
+[INFO ][2023-03-25 00:17:22][main] Finished reading registration data.
+[INFO ][2023-03-25 00:17:22][main] Program has completed successfully.

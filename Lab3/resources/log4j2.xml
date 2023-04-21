@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <Properties>
+        <Property name="filename">./logs</Property>
+    </Properties>
+
+    <Appenders>
+
+        <RollingFile name="file" fileName="${filename}/logsStartingFromDebug.Log"
+                     append="false" filePattern="${filename}/Log-%d{HH-mm-ss-SSS}.Log">
+            <PatternLayout pattern="[%-5level][%d{yyyy-MM-dd HH:mm:ss}][%t] %msg%n"/>
+            <SizeBasedTriggeringPolicy size="16 KB" />
+        </RollingFile>
+
+        <RollingFile name="file2" fileName="${filename}/logsStartingFromWarn.Log"
+                     append="false" filePattern="${filename}/Log2-%d{HH-mm-ss-SSS}.Log">
+            <PatternLayout pattern="[%-5level][%d{yyyy-MM-dd HH:mm:ss}][%t] %msg%n"/>
+            <SizeBasedTriggeringPolicy size="16 KB" />
+        </RollingFile>
+
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout
+                    pattern="[%-5level][%d{yyyy-MM-dd HH:mm:ss}][%t] %msg%n"/>
+        </Console>
+
+    </Appenders>
+
+    <Loggers>
+        <Logger name="ru.belgy.polshchikov" level="debug" additivity="false">
+            <AppenderRef ref="console"/>
+            <AppenderRef ref="file"/>
+            <AppenderRef ref="file2" level="warn"/>
+        </Logger>
+        <Root level="fatal">
+            <AppenderRef ref="console"/>
+            <AppenderRef ref="file"/>
+            <AppenderRef ref="file2"/>
+        </Root>
+    </Loggers>
+
+</Configuration>
