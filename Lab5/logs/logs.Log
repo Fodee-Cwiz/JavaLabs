@@ -1,0 +1,12 @@
+[INFO ][2023-05-25 23:16:05][main] The program is running.
+[DEBUG][2023-05-25 23:16:05][main] Library instance created.
+[INFO ][2023-05-25 23:16:05][main] Added book 'War and Peace' to the library.
+[INFO ][2023-05-25 23:16:05][main] Added book 'Crime and Punishment' to the library.
+[INFO ][2023-05-25 23:16:05][main] Added book 'The Captain's Daughter' to the library.
+[INFO ][2023-05-25 23:16:05][main] Added book 'Dead Souls' to the library.
+[WARN ][2023-05-25 23:16:05][Thread-1] Book 'War and Peace' is not available in the library. 'Fedor' waiting for availability...
+[WARN ][2023-05-25 23:16:13][Thread-0] Book 'Crime and Punishment' is not available in the library. 'Ivan' waiting for availability...
+[DEBUG][2023-05-25 23:16:13][Thread-1] Visitor 'Fedor' finished.
+[DEBUG][2023-05-25 23:16:15][Thread-0] Visitor 'Ivan' finished.
+[DEBUG][2023-05-25 23:16:15][main] Library closed.
+[INFO ][2023-05-25 23:16:15][main] Program finished.
